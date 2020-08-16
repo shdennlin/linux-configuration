@@ -1,0 +1,4 @@
+#+STARTUP: indent
+#+TITLE: Ubuntu configration
+
+This is my Ubuntu configration.

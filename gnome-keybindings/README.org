@@ -1,0 +1,13 @@
+#+STARTUP: indent
+#+TITLE: gnome-keybindings
+
+** How to use
+ * backup keybindings:
+   #+BEGIN_SRC shell
+     dconf dump /org/gnome/desktop/wm/keybindings/ > keybindings.dconf
+   #+END_SRC
+ * restores keybindings:
+   #+BEGIN_SRC shell
+     dconf dump /org/gnome/desktop/wm/keybindings/ < keybindings.dconf
+   #+END_SRC
+
