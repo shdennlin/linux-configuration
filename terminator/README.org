@@ -1,0 +1,5 @@
+#+STARTUP: indent
+#+TITLE: Configuration for terminator
+
+** terminator Configuration Location
+   ~/.config/terminator/config

@@ -1,0 +1,206 @@
+[global_config]
+  title_hide_sizetext = True
+  suppress_multiple_term_dialog = True
+  title_use_system_font = False
+  title_font = Sans 12
+[keybindings]
+  new_tab = <Primary><Shift>t
+  go_up = <Alt>k
+  go_down = <Alt>j
+  go_left = <Alt>h
+  go_right = <Alt>l
+  toggle_scrollbar = None
+  switch_to_tab_1 = <Alt>1
+  switch_to_tab_2 = <Alt>2
+  switch_to_tab_3 = <Alt>3
+  switch_to_tab_4 = <Alt>4
+  switch_to_tab_5 = <Alt>5
+  switch_to_tab_6 = <Alt>6
+  switch_to_tab_7 = <Alt>7
+  switch_to_tab_8 = <Alt>8
+  switch_to_tab_9 = <Alt>9
+  switch_to_tab_10 = <Alt>0
+  group_all = None
+  group_all_toggle = None
+  ungroup_all = None
+  group_tab = None
+  group_tab_toggle = None
+  ungroup_tab = None
+  layout_launcher = <Alt>w
+[profiles]
+  [[default]]
+    background_color = "#300a24"
+    cursor_color = "#aaaaaa"
+    font = Ubuntu Mono 15
+    foreground_color = "#ffffff"
+    use_system_font = False
+[layouts]
+  [[default]]
+    [[[child0]]]
+      type = Window
+      parent = ""
+      order = 0
+      position = 1920:0
+      maximised = True
+      fullscreen = False
+      size = 1920, 1043
+      title = shawn@Shawn-LNB: ~
+      last_active_window = True
+    [[[child1]]]
+      type = Notebook
+      parent = child0
+      order = 0
+      labels = None, None, None, None, None, None
+      last_active_term = 2253d46d-597b-4dc7-9cc2-0c52bbbcc8aa, 4bdc3b6c-6fa8-479a-b8f4-687882627c81, ba16bcca-cd22-42e2-a8c2-16cd4ba039fd, 5247dc25-859e-42af-a7af-155e3aded826, 80039198-2188-44b4-8016-f652685f5ddc, 743de795-bf91-4f36-bb66-32171a0f2228
+      active_page = 0
+    [[[terminal2]]]
+      type = Terminal
+      parent = child1
+      order = 0
+      profile = default
+      uuid = 2253d46d-597b-4dc7-9cc2-0c52bbbcc8aa
+    [[[terminal3]]]
+      type = Terminal
+      parent = child1
+      order = 1
+      profile = default
+      uuid = 4bdc3b6c-6fa8-479a-b8f4-687882627c81
+    [[[terminal4]]]
+      type = Terminal
+      parent = child1
+      order = 2
+      profile = default
+      uuid = ba16bcca-cd22-42e2-a8c2-16cd4ba039fd
+    [[[child5]]]
+      type = VPaned
+      parent = child1
+      order = 3
+      position = 501
+      ratio = 0.5015015015015015
+    [[[terminal6]]]
+      type = Terminal
+      parent = child5
+      order = 0
+      profile = default
+      uuid = 5247dc25-859e-42af-a7af-155e3aded826
+    [[[terminal7]]]
+      type = Terminal
+      parent = child5
+      order = 1
+      profile = default
+      uuid = 77b717f9-4d2a-4df6-85b6-4bc29d3a7d90
+    [[[child8]]]
+      type = HPaned
+      parent = child1
+      order = 4
+      position = 955
+      ratio = 0.4992158912702561
+    [[[terminal9]]]
+      type = Terminal
+      parent = child8
+      order = 0
+      profile = default
+      uuid = 80039198-2188-44b4-8016-f652685f5ddc
+    [[[terminal10]]]
+      type = Terminal
+      parent = child8
+      order = 1
+      profile = default
+      uuid = 7be0aa78-dfbe-4370-9218-c515eeba7811
+    [[[child11]]]
+      type = HPaned
+      parent = child1
+      order = 5
+      position = 956
+      ratio = 0.4997386304234187
+    [[[child12]]]
+      type = VPaned
+      parent = child11
+      order = 0
+      position = 500
+      ratio = 0.5005005005005005
+    [[[terminal13]]]
+      type = Terminal
+      parent = child12
+      order = 0
+      profile = default
+      uuid = 743de795-bf91-4f36-bb66-32171a0f2228
+    [[[terminal14]]]
+      type = Terminal
+      parent = child12
+      order = 1
+      profile = default
+      uuid = d764df69-b04b-4e9f-a659-5749d5005342
+    [[[terminal15]]]
+      type = Terminal
+      parent = child11
+      order = 1
+      profile = default
+      uuid = 7822daf1-7a3c-4db4-9bc3-1f8c6ad846a7
+  [[oo-|]]
+    [[[child0]]]
+      type = Window
+      parent = ""
+      order = 0
+      position = 0:27
+      maximised = True
+      fullscreen = False
+      size = 1920, 1016
+      title = shawn@Shawn-LNB: ~
+      last_active_window = True
+    [[[child1]]]
+      type = Notebook
+      parent = child0
+      order = 0
+      labels = None, None, None, None
+      last_active_term = 2253d46d-597b-4dc7-9cc2-0c52bbbcc8aa, d2f40de9-6957-4b1f-9b08-eca1a425696e, f7a7d8ba-2fb5-429b-998d-2a7dfcf363e9, ba16bcca-cd22-42e2-a8c2-16cd4ba039fd
+      active_page = 0
+    [[[terminal2]]]
+      type = Terminal
+      parent = child1
+      order = 0
+      profile = default
+      uuid = 2253d46d-597b-4dc7-9cc2-0c52bbbcc8aa
+    [[[terminal3]]]
+      type = Terminal
+      parent = child1
+      order = 1
+      profile = default
+      uuid = d2f40de9-6957-4b1f-9b08-eca1a425696e
+    [[[child4]]]
+      type = HPaned
+      parent = child1
+      order = 2
+      position = 956
+      ratio = 0.4997386304234187
+    [[[terminal5]]]
+      type = Terminal
+      parent = child4
+      order = 0
+      profile = default
+      uuid = 4bdc3b6c-6fa8-479a-b8f4-687882627c81
+    [[[terminal6]]]
+      type = Terminal
+      parent = child4
+      order = 1
+      profile = default
+      uuid = f7a7d8ba-2fb5-429b-998d-2a7dfcf363e9
+    [[[child7]]]
+      type = VPaned
+      parent = child1
+      order = 3
+      position = 486
+      ratio = 0.5
+    [[[terminal8]]]
+      type = Terminal
+      parent = child7
+      order = 0
+      profile = default
+      uuid = ba16bcca-cd22-42e2-a8c2-16cd4ba039fd
+    [[[terminal9]]]
+      type = Terminal
+      parent = child7
+      order = 1
+      profile = default
+      uuid = aabe67a9-0af2-437a-962b-e2a2685e7049
+[plugins]
