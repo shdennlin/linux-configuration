@@ -1,0 +1,7 @@
+#+STARTUP: indent
+#+TITLE: rclone configration
+
+install:
+#+begin_src shell
+bash install.sh
+#+end_src

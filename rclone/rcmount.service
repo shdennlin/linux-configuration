@@ -1,0 +1,20 @@
+# rclone everying
+# =======================
+#
+# rclone mount ga4567896 and shdennlin
+# 
+[Unit]
+Description=rclone mount ga4567896 and shdennlin
+Wants=network-online.target
+After=network.target
+ 
+[Service]
+User=shdennlin
+Type=oneshot
+RemainAfterExit=yes
+ExecStart=/usr/bin/sh "/home/shdennlin/engineering/configuration-file/linux-configuration/rclone/mount.sh"
+ExecReload=/usr/bin/sh "/home/shdennlin/engineering/configuration-file/linux-configuration/rclone/mount.sh"
+ExecStop=/usr/bin/sh "/home/shdennlin/engineering/configuration-file/linux-configuration/rclone/unmount.sh"
+ 
+[Install]
+WantedBy=multi-user.target
