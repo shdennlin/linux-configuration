@@ -1,0 +1,12 @@
+# include the default.pa pulseaudio config file
+.include /etc/pulse/default.pa
+
+# Virtual sink
+.ifexists module-null-sink.so
+load-module module-null-sink sink_name=VirtualSink sink_properties=device.description=Virtual_Sink
+.endif
+
+# virtual source
+.ifexists module-virtual-source.so
+load-module module-virtual-source source_name=VirtualSource source_properties=device.description=Virtual_Source
+.endif
