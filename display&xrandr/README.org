@@ -1,0 +1,62 @@
+** Display Configuration
+1. Install Nvidia driver
+   #+begin_src sh
+   sudo apt update
+   sudo apt install -y nvidia-driver nvidia-cuda-toolkit
+   sudo reboot
+   #+end_src
+   Ref: [[https://www.kali.org/docs/general-use/install-nvidia-drivers-on-kali-linux/][Install NVIDIA GPU Drivers]]
+
+2. ~$ sudo vi /etc/X11/xorg.conf~ and add
+   #+begin_src conf
+   Section "ServerLayout"
+   Identifier "layout"
+   Screen 0 "nvidia"
+   Inactive "intel"
+   EndSection
+
+   Section "Device"
+   Identifier "nvidia"
+   Driver "nvidia"
+   BusID  "PCI:1:0:0"
+   EndSection
+
+   Section "Screen"
+   Identifier "nvidia"
+   Device "nvidia"
+   EndSection
+
+   Section "Device"
+   Identifier "intel"
+   Driver "modesetting"
+   Option "AccelMethod"  "uxa"
+   EndSection
+
+   Section "Screen"
+   Identifier "intel"
+   Device "intel"
+   EndSection
+   #+end_src
+   Ref: https://github.com/Bumblebee-Project/Bumblebee/wiki/Multi-monitor-setup
+   
+3. Change display managers
+   ~$ sudo dpkg-reconfigure gdm3~ and select =sddm=
+   Ref: [[https://ubuntuqa.com/zh-tw/article/6577.html][什麽是gdm3，kdm，lightdm？如何安裝和刪除它們？]]
+   
+4. add script after start sddm ~$ sudo vi /usr/share/sddm/scripts/Xsetup~ and add below
+   #+begin_src sh
+   display1="HDMI-0"
+   display2="eDP-1-1"
+
+   xrandr --setprovideroutputsource modesetting NVIDIA-0
+   xrandr --auto
+   xrandr --output $display1 --mode 1920x1080 --primary
+   xrandr --output $display2 --right-of $display1 --mode 1920x1080
+   #+end_src
+   =NOTE=: You need to change display variable by your self, you can use ~$ xrandr~ to see your connected
+   
+5. (Option) install =autorandr=
+   #+begin_src sh
+   sudo apt install autorandr
+   #+end_src
+   Ref: https://github.com/phillipberndt/autorandr
