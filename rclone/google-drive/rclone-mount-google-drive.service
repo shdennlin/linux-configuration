@@ -1,0 +1,21 @@
+[Unit]
+Description=rclone mount google-drive file
+Wants=network-online.target
+After=network.target network-online.target
+StartLimitInterval=300
+StartLimitBurst=10
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+WorkingDirectory=/home/shdennlin/engineering/configuration-file/linux-configuration/rclone/google-drive
+ExecStart=/usr/bin/bash mount.sh
+ExecStop=/usr/bin/bash unmount.sh
+RestartSec=60
+Restart=on-failure
+TimeoutStartSec=infinity
+SyslogIdentifier=rclone-mount-google-drive
+
+ 
+[Install]
+WantedBy=default.target
