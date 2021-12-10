@@ -2,3 +2,27 @@
 #+TITLE: Ubuntu configration
 
 This is my Ubuntu configration.
+
+
+* Table of Content                                        :TOC_2_gh:noexport:
+- [[#rclone----google-drive][rclone -- Google Drive]]
+- [[#bingwallpaper][BingWallpaper]]
+
+* rclone -- Google Drive
+Requirements: [[https://rclone.org/][rclone]] and configure your remote
+
+Install:
+#+begin_src sh
+cd ./rclone/google-drive
+./install.sh
+#+end_src
+
+* BingWallpaper
+Requirements: =python3=
+
+Install
+#+begin_src sh
+git submodule init && git submodule update
+cd ./bingwallpaper
+./install.sh
+#+end_src
