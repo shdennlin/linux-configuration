@@ -1,0 +1,18 @@
+[Unit]
+Description=auto run BingWallpaper script
+Wants=network-online.target
+After=network.target network-online.target
+StartLimitInterval=300
+StartLimitBurst=10
+
+[Service]
+Type=oneshot
+WorkingDirectory=/home/shdennlin/engineering/configuration-file/linux-configuration/bingwallpaper
+ExecStart=/usr/bin/bash bingwallpaper-run.sh
+RestartSec=60
+Restart=on-failure
+TimeoutStartSec=infinity
+SyslogIdentifier=BingWallpaper
+ 
+[Install]
+WantedBy=default.target

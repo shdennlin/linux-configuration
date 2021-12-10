@@ -1,0 +1,9 @@
+[Unit]
+Description=auto run BingWallpaper script when login
+
+[Timer]
+OnBootSec=60s
+RemainAfterElapse=false
+
+[Install]
+WantedBy=timers.target
