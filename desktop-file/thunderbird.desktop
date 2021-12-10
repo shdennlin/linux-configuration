@@ -1,0 +1,17 @@
+[Desktop Entry]
+Categories=Office;
+Comment[en_US]=Email, contacts, calendar, tasks, feed rss reader, chat, and groupware app.
+Comment=Email, contacts, calendar, tasks, feed rss reader, chat, and groupware app.
+Exec="/home/shdennlin/app/thunderbird/thunderbird"
+Icon=thunderbird
+Name[en_US]=Thunderbird
+Name=Thunderbird
+StartupNotify=true
+StartupWMClass=processing-app-Base
+Terminal=false
+TerminalOptions=
+Type=Application
+X-DBUS-ServiceName=
+X-DBUS-StartupType=
+X-KDE-SubstituteUID=false
+X-KDE-Username=

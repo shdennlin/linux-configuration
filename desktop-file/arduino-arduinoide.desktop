@@ -1,0 +1,22 @@
+[Desktop Entry]
+Categories=Development;IDE;Electronics;
+Comment[en_US]=Open-source electronics prototyping platform
+Comment=Open-source electronics prototyping platform
+Exec="/home/shdennlin/app/arduino-1.8.16/arduino"
+GenericName[en_US]=Arduino IDE
+GenericName=Arduino IDE
+Icon=arduino-arduinoide
+Keywords=embedded electronics;electronics;avr;microcontroller;
+MimeType=text/x-arduino;
+Name[en_US]=Arduino IDE
+Name=Arduino IDE
+Path=
+StartupNotify=true
+StartupWMClass=processing-app-Base
+Terminal=false
+TerminalOptions=
+Type=Application
+X-DBUS-ServiceName=
+X-DBUS-StartupType=
+X-KDE-SubstituteUID=false
+X-KDE-Username=

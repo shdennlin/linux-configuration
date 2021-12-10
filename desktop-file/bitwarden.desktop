@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Bitwarden
+GenericName=
+Comment=
+Keywords=
+Exec=/home/shdennlin/app/Bitwarden-1.29.1-x86_64.AppImage
+Terminal=false
+Type=Application
+Icon=bitwarden
+Categories=
