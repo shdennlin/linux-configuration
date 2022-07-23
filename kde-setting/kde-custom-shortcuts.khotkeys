@@ -3,7 +3,7 @@ DataCount=1
 
 [Data_1]
 Comment=KMenuEdit Global Shortcuts
-DataCount=5
+DataCount=7
 Enabled=true
 Name=KMenuEdit
 SystemGroup=1
@@ -35,7 +35,7 @@ Comment=Simple_action
 TriggersCount=1
 
 [Data_1_1Triggers0]
-Key=Meta+Z
+Key=
 Type=SHORTCUT
 Uuid={d03619b6-9b3c-48cc-9d9c-a2aadb485550}
 
@@ -63,19 +63,19 @@ TriggersCount=1
 [Data_1_2Triggers0]
 Key=Meta+T
 Type=SHORTCUT
-Uuid={fb2fbc0e-da37-4935-9bc4-83703f65768e}
+Uuid={15f32aa3-3a26-4de6-9813-1c8b439a6987}
 
 [Data_1_3]
-Comment=Global keyboard shortcut to launch Firefox
+Comment=Global keyboard shortcut to launch Thunderbird
 Enabled=true
-Name=Launch Firefox
+Name=Launch Thunderbird
 Type=SIMPLE_ACTION_DATA
 
 [Data_1_3Actions]
 ActionsCount=1
 
 [Data_1_3Actions0]
-CommandURL=firefox.desktop
+CommandURL=thunderbird.desktop
 Type=MENUENTRY
 
 [Data_1_3Conditions]
@@ -87,21 +87,21 @@ Comment=Simple_action
 TriggersCount=1
 
 [Data_1_3Triggers0]
-Key=Meta+W
+Key=Meta+M
 Type=SHORTCUT
-Uuid={2895eeb6-26d6-4a2a-8fff-3c2caafd2b33}
+Uuid={0cb13d4e-b77a-46f5-a7f5-8da938a87e3b}
 
 [Data_1_4]
-Comment=Global keyboard shortcut to launch Thunderbird
+Comment=Global keyboard shortcut to launch System Monitor
 Enabled=true
-Name=Launch Thunderbird
+Name=Launch System Monitor
 Type=SIMPLE_ACTION_DATA
 
 [Data_1_4Actions]
 ActionsCount=1
 
 [Data_1_4Actions0]
-CommandURL=thunderbird.desktop
+CommandURL=org.kde.plasma-systemmonitor.desktop
 Type=MENUENTRY
 
 [Data_1_4Conditions]
@@ -113,21 +113,21 @@ Comment=Simple_action
 TriggersCount=1
 
 [Data_1_4Triggers0]
-Key=
+Key=Ctrl+Shift+Esc
 Type=SHORTCUT
-Uuid={0cb13d4e-b77a-46f5-a7f5-8da938a87e3b}
+Uuid={2be5a35a-adbe-4daf-84aa-3742b4e3e31a}
 
 [Data_1_5]
-Comment=Global keyboard shortcut to launch System Monitor
+Comment=Global keyboard shortcut to launch Emacs
 Enabled=true
-Name=Launch System Monitor
+Name=Launch Emacs
 Type=SIMPLE_ACTION_DATA
 
 [Data_1_5Actions]
 ActionsCount=1
 
 [Data_1_5Actions0]
-CommandURL=org.kde.plasma-systemmonitor.desktop
+CommandURL=emacs.desktop
 Type=MENUENTRY
 
 [Data_1_5Conditions]
@@ -139,9 +139,61 @@ Comment=Simple_action
 TriggersCount=1
 
 [Data_1_5Triggers0]
-Key=Ctrl+Shift+Esc
+Key=Meta+Z
 Type=SHORTCUT
-Uuid={2be5a35a-adbe-4daf-84aa-3742b4e3e31a}
+Uuid={8a519594-505c-4e43-a6ad-9345c8f8451a}
+
+[Data_1_6]
+Comment=Global keyboard shortcut to launch Calculator
+Enabled=true
+Name=Lanuch Calculator
+Type=SIMPLE_ACTION_DATA
+
+[Data_1_6Actions]
+ActionsCount=1
+
+[Data_1_6Actions0]
+CommandURL=mate-calc.desktop
+Type=MENUENTRY
+
+[Data_1_6Conditions]
+Comment=
+ConditionsCount=0
+
+[Data_1_6Triggers]
+Comment=Simple_action
+TriggersCount=1
+
+[Data_1_6Triggers0]
+Key=Launch (1)
+Type=SHORTCUT
+Uuid={26791638-cd03-4dec-b69f-d0cd2e31300f}
+
+[Data_1_7]
+Comment=Global keyboard shortcut to launch Calculator
+Enabled=true
+Name=Lanuch Calculator
+Type=SIMPLE_ACTION_DATA
+
+[Data_1_7Actions]
+ActionsCount=1
+
+[Data_1_7Actions0]
+CommandURL=
+Type=MENUENTRY
+
+[Data_1_7Conditions]
+Comment=
+ConditionsCount=0
+
+[Data_1_7Triggers]
+Comment=Simple_action
+TriggersCount=1
+
+[Data_1_7Triggers0]
+Key=Meta+C
+Type=SHORTCUT
+Uuid={04c93250-8583-4f36-ba15-167110015b07}
 
 [Main]
 AllowMerge=false
