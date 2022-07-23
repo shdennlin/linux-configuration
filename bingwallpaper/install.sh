@@ -1,6 +1,6 @@
 #!/bin/bash
 
-mkdir -p ~/.config/systemd/user/
+mkdir -pv ~/.config/systemd/user/
 cp -f ./bingwallpaper-run.service ~/.config/systemd/user/
 cp -f ./bingwallpaper-run.timer ~/.config/systemd/user/
 

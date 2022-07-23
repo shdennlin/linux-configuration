@@ -3,8 +3,9 @@
 ping -c1 google.com
 if [ $? -ne 0 ]; then
     echo "ERROR connect network, waiting for auto restart"
-    exit 2
+    exit 1
 fi
 
-python3 ./BingWallpaper/BingWallpaper.py --auto
+/home/shdennlin/.pyenv/shims/python ./BingWallpaper/BingWallpaper.py --auto
+echo "successful run the BingWallpaper/BingWallpaper.py"
 
